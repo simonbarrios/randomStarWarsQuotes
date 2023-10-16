@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Star Wars', sans-serif;
+    color: #FFD700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wrapper {
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    width: 100%;
+    background-color: #808080;
+    padding: 50px 40px;
+    box-shadow: 0 20px 65px #808080;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #3e3e3e;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+}
+
+#quoteDisplay {
+    color: white;
+    line-height: 2;
+    font-size: 18px;
+}
+
+#authorDisplay {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.container button {
+    background-color: #FFD700;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
